@@ -10,97 +10,271 @@
 
 <body>
 	<div id="wrapper">
-		<!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
 		<header id="header">
-			<!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
 			<div class="logo">
 				<img alt="logo" id="header-img" src="https://i.imgur.com/tw5RdnH.png">
-				<h1>Banana-na-nas</h1>
+				<h1>Banana</h1>
 			</div>
-			<!--User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
-				User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.-->
-
 			<nav id="nav-bar">
 				<ul>
-					<li><a href="#first" class="nav-link">Health</a></li>
-					<li><a href="#second" class="nav-link">After gym</a></li>
-					<li><a href="#third" class="nav-link">Third Section</a></li>
+					<li><a href="#subscribe" class="nav-link">Health</a></li>
+					<li><a href="#second" class="nav-link">Video</a></li>
+					<li><a href="#third" class="nav-link">Properties</a></li>
 				</ul>
 			</nav>
-			<!--	
-				User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
-			-->
+
 		</header>
-		<!--
-				User Story #6: I can watch an embedded product video with id="video".
-				User Story #7: My landing page has a form element with a corresponding id="form".
-				User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
-				User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
-				User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
-				User Story #11: Within the form, there is a submit input with a corresponding id="submit".
-				User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
-				User Story #13: The navbar should always be at the top of the viewport.
-				User Story #14: My product landing page should have at least one media query.
-				User Story #15: My product landing page should utilize CSS flexbox at least once.
-			-->
 		<main>
+			<section id="zero">
+				<h2 id="subscribe">Banana newsletter</h2>
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<input id="email" name="email" type="email" placeholder="e.g: yourname@domain.com" required>
+					<input id="submit" type="submit" value="subscribe">
+				</form>
+			</section>
 			<section id="first">
 				<h2>Health</h2>
 				<div class="icon-description">
 					<img src="https://i.imgur.com/4Bvqal9.png" alt="healthy bananas">
 					<span>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et lobortis velit. Curabitur lacinia sollicitudin interdum. Donec vel lectus at enim vestibulum ultricies eu vel quam. Aenean gravida nulla id erat placerat, sed porta odio gravida. Praesent ut velit ac massa sollicitudin accumsan.
+						Bananas are one of the most widely consumed fruits in the world for good reason. Eating them could help lower blood pressure and reduce the risks of cancer and asthma. Bananas are rich in a mineral called potassium. This mineral is important as it helps maintain fluid levels in the body and regulates the movement of nutrients and waste products in and out of cells.
 					</span>
 				</div>
 				<div class="icon-description">
 					<img src="https://i.imgur.com/NF2pXU9.png" alt="best after gym">
 					<span>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et lobortis velit. Curabitur lacinia sollicitudin interdum. Donec vel lectus at enim vestibulum ultricies eu vel quam. Aenean gravida nulla id erat placerat, sed porta odio gravida. Praesent ut velit ac massa sollicitudin accumsan.
+						One thing people often neglect to think about when planning a muscle-building diet is carbohydrate. As protein is the main building block of muscle tissue, it often takes center stage, but carbs are vital, too. A nutritious way to get more carbs, along with plenty of fiber, vitamins and minerals, is to eat more bananas.
 					</span>
 				</div>
 				<div class="icon-description">
-					<img src="https://i.imgur.com/4Bvqal9.png" alt="healthy bananas">
+					<img src="https://i.imgur.com/bYLH4CS.png" alt="healthy bananas">
 					<span>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et lobortis velit. Curabitur lacinia sollicitudin interdum. Donec vel lectus at enim vestibulum ultricies eu vel quam. Aenean gravida nulla id erat placerat, sed porta odio gravida. Praesent ut velit ac massa sollicitudin accumsan.
+						Generally, it is agreed that bananas originated in Southeast Asia and the South Pacific around 8000 to 5000 BC. Bananas are believed to have been the world's first cultivated fruit. From Southeast Asia, the fruit was brought west by Arab conquerors and then carried to the New World by explorers and missionaries.
 					</span>
 				</div>
 			</section>
 			<section id="second">
-				<h2>Second Section</h2>
+				<h2>Video</h2>
 				<div class="video-resp">
-					<iframe id="video" src="https://www.youtube.com/embed/7DYjfjaZGas?controls=0" allowfullscreen></iframe>
+					<iframe id="video" src="https://www.youtube.com/embed/SpAHPXNhAwk?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
 				</div>
 			</section>
 			<section id="third">
-				<h2>Third Section</h2>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<h3>Test section</h3>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
-				<br><br>
+				<h2>Properties</h2>
+				<!--
+					Properties data made from:
+					https://en.wikipedia.org/wiki/Banana
+				-->
+				<div class="box-prop">
+					<div>
+						<table>
+							<caption>Nutritional value per 100g</caption>
+							<tbody>
+								<tr>
+									<td class="ingr">
+										Energy
+									</td>
+									<td class="value">
+										371 kJ (89 kcal)
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Carbohydrates
+									</td>
+									<td class="value">
+										22.84g
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Sugars
+									</td>
+									<td class="value">
+										12.23g
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Dietary fiber
+									</td>
+									<td class="value">
+										2.6g
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Fat
+									</td>
+									<td class="value">
+										0.33g
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Protein
+									</td>
+									<td class="value">
+										1.09g
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Water
+									</td>
+									<td class="value">
+										74.91g
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<table>
+							<caption>Vitamin value per 100g</caption>
+							<tbody>
+								<tr>
+									<td class="ingr">
+										Thiamine (B1)
+									</td>
+									<td class="value">
+										0.031mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Riboflavin (B2)
+									</td>
+									<td class="value">
+										0.073mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Niacin (B3)
+									</td>
+									<td class="value">
+										0.665mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Pantothenic acid (B5)
+									</td>
+									<td class="value">
+										0.334mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Vitamin B6
+									</td>
+									<td class="value">
+										0.4mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Folate (B9)
+									</td>
+									<td class="value">
+										20μg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Choline
+									</td>
+									<td class="value">
+										9.8mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Vitamin C
+									</td>
+									<td class="value">
+										8.7mg
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div>
+						<table>
+							<caption>Minerals value per 100g</caption>
+							<tbody>
+								<tr>
+									<td class="ingr">
+										Magnesium
+									</td>
+									<td class="value">
+										27mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Manganese
+									</td>
+									<td class="value">
+										0.27mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Phosphorus
+									</td>
+									<td class="value">
+										22mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Potassium
+									</td>
+									<td class="value">
+										358mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Sodium
+									</td>
+									<td class="value">
+										1mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Zinc
+									</td>
+									<td class="value">
+										0.15mg
+									</td>
+								</tr>
+								<tr>
+									<td class="ingr">
+										Iron
+									</td>
+									<td class="value">
+										0.26mg
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</section>
 		</main>
 		<footer>
+			<div class="social">
+				<a href="https://codepen.io/Aviserin" target="_blank">
+                    <img alt="Follow me at CodePen" title="Follow me at CodePen" src="https://i.imgur.com/6VSFtAR.png">
+                </a>
+				<a href="https://github.com/Aviserin" target="_blank">
+                    <img alt="Follow me at GitHub" title="Follow me at GitHub" src="https://i.imgur.com/Y3WfVrw.png">
+                </a>
+			</div>
 			<div class="flaticon-copyrights">
 				Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
 			</div>
